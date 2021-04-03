@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #270A55;
+  background-image: url('../img/bg-lines.svg'), url('../img/light-point.svg');
+  background-repeat: no-repeat;
+  background-size: 70%, 150%;
+  background-position: 100% 800px, 50% 800px;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #F2F2F2;
+}
+p, a, span {
+  color: #8179A8;
+}
+.section-header {
+  font-size: 58px;
+}
+.text-gradient {
+  background: rgb(153,153,252);
+  background-image: -moz-linear-gradient(90deg, rgba(153,153,252,1) 0%, rgba(170,65,181,1) 34%, rgba(176,67,173,1) 63%, rgba(252,91,72,1) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgba(153,153,252,1) 0%, rgba(170,65,181,1) 34%, rgba(176,67,173,1) 63%, rgba(252,91,72,1) 100%);
+  background-image: linear-gradient(90deg, rgba(153,153,252,1) 0%, rgba(170,65,181,1) 34%, rgba(176,67,173,1) 63%, rgba(252,91,72,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9999fc",endColorstr="#fc5b48",GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-position: center;
+  background-size: 42%;
+}
+.subheader {
+  font-size: 20px;
+}
+.white {
+  color: #F2F2F2;
+}
+.opacity-0 {
+  opacity: 0;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.container-gradient {
+  background: rgb(118,93,179);
+  background: -moz-radial-gradient(circle, rgba(118,93,179,0.5) 0%, rgba(118,93,179,0) 100%);
+  background: -webkit-radial-gradient(circle, rgba(118,93,179,0.5) 0%, rgba(118,93,179,0) 100%);
+  background: radial-gradient(circle, rgba(118,93,179,0.5) 0%, rgba(118,93,179,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#765db3",endColorstr="#765db3",GradientType=1);
+}
+
+.btn-gradient {
+  background: rgb(155,42,238);
+  background: linear-gradient(-90deg, rgba(155,42,238,1) 0%, rgba(91,76,211,1) 50%, rgba(155,42,238,1) 100%);
+  background-size: 150%;
+  transition: all .5s linear;
+
+  color: #FFFFFF;
+  border-radius: 8px;
+}
+.btn-gradient:hover {
+  background-position: -100px;
+  color: #FFFFFF;
+}
+.btn-gradient:active {
+  background: rgb(155,42,238);
+  background: linear-gradient(-90deg, rgba(155,42,238,1) 0%, rgba(91,76,211,1) 50%, rgba(155,42,238,1) 100%);
+}
+.btn-gradient:focus {
+  background: rgb(155,42,238);
+  background: linear-gradient(-90deg, rgba(155,42,238,1) 0%, rgba(91,76,211,1) 50%, rgba(155,42,238,1) 100%);
+}
+
+.jumbotron {
+  height: 100vh;
+  background-image: url('../img/jumbotron-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+  margin-bottom: 156px;
+}
+
+.card {
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+}
+.card-power {
+  height: 340px;
+}
+
+.card-header {
+  background-color: transparent;
+  border: none;
+}
+
+.card-gradient-1 {
+  background: rgb(77,44,135);
+  background: linear-gradient(-45deg, rgba(77,44,135,1) 0%, rgba(63,42,128,1) 100%);
+}
+.card-gradient-2 {
+  background: rgb(134,99,209);
+  background: linear-gradient(-45deg, rgba(134,99,209,1) 0%, rgba(97,87,187,1) 100%);
+}
+
+.badge-comingsoon {
+  background-color: #6F62BF;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+footer {
+  background: rgb(155,42,238);
+  background: linear-gradient(-90deg, rgba(155,42,238,1) 0%, rgba(91,76,211,1) 100%);
+}
+footer .container .row:first-child {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+footer ul  {
+  list-style-type: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+footer ul li a {
+  color: #F2F2F2;
+  opacity: 0.5;
+}
+footer ul li a:hover {
+  color: #F2F2F2;
+  opacity: 1;
+  text-decoration: none;
+}
+footer ul li {
+  margin-bottom: 14px;
+}
+footer ul li:first-child {
+  font-size: 18px;
+  color: #F2F2F2;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+.insigna {
+  color: #F2F2F2;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+  .section-header {
+    font-size: 3rem;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .text-gradient {
+    background-size: 90%;
+  }
+  footer .container .row {
+    text-align: center;
+  }
+  #community a {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
