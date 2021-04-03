@@ -172,6 +172,12 @@ footer ul li:first-child {
   font-size: 12px;
 }
 
+.particle {
+  pointer-events: none;
+  position: absolute;
+  will-change: transform;
+}
+
 @media (max-width: 768px) {
   .display-4 {
     font-size: 3rem;
