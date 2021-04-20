@@ -62,6 +62,7 @@ p a:hover {
 
 .navbar {
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar-brand {
